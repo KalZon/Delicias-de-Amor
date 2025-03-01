@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DELICIAS DE AMOR</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/3.2-catalogo.css" />
+  <link rel="stylesheet" href="css/hf.css">
+  <link rel="icon" href="img/logo delicias de amor blanco y negro.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+<header>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><img src="img/logo delicias de amor blanco y negro.png"></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn"><i class="bi bi-x-lg"></i></div>
+        <li><a href="index.html"><i class="bi bi-house"></i>Principal</a></li>
+        <li><a href="2-nosotros.html"><i class="bi bi-bookmark"></i>Nosotros</a></li>
+        <li><a class="uno" href="3.2-catalogo.html"><i class="bi bi-cake2"></i>Catálogo</a></li>
+        <li><a href="4-mostrarCarrito.php"><i class="bi bi-cart"></i>Mi carrito</a></li>
+      </ul>
+      <div class="icon menu-btn"><i class="bi bi-list"></i></div>
+    </div>
+  </nav>
+</header>
+
+<div class="about"></div>
+<script src="JS/menu.js"></script>
+<body>
+
+
+  <div class="divi">
+    <aside>
+      <div class="lista flex">
+        <i class="bi bi-sliders"></i>
+        <h2>Filtros</h2>
+      </div>
+      <div class="asaide_div1">
+        <br><br><br>
+        <form action="">
+          <button class="filter" id="mostrar_postres">Postres</button><br><br>
+          <button class="filter" id="mostrar_dulces">Dulces</button><br><br>
+          <button class="filter" id="mostrar_empanadas">Empanadas</button><br><br>
+          <button class="filter" id="mostrar_bocaditos">Bocaditos</button><br><br>
+          <button class="filter" id="mostrar_TODO">Mostrar TODO</button><br><br>
+        </form>
+      </div>
+    </aside>
+    <section class="secciones">
+      <div class="card" id="postres">
+        <div class="face front">
+          <img src="img/catalogo/zanahoria.jpg">
+          <h3>Pastel de Zanahoria</h3>
+        </div>
+        <div class="face back">
+          <h3>S/.80</h3>
+          <p>Deléitate con nuestro irresistible pastel de zanahoria. Cada rebanada es un festín de sabores, 
+            con su esponjosa masa, zanahorias frescas y nueces crujientes, coronadas con una delicada crema 
+            batida. Una tentación que no podrás resistir, perfecta para cualquier ocasión especial.</p>
+          <div class="link">
+            <button data-id="1" data-name="Pastel de Zanahoria" data-price="80" class="agregar">Agregar</button>
+            <button class="decrement" data-id="1">-</button>
+            <input class="number" type="number" id="cantidad_1" value="1" readonly>
+            <button class="increment" data-id="1">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="postres">
+        <div class="face front">
+          <img src="img/catalogo/chocolate.jpg">
+          <h3>Pastel de Chocolate</h3>
+        </div>
+        <div class="face back">
+          <h3>S/.80</h3>
+          <p>Nuestro pastel de chocolate es tierno, húmedo y recubierto con una rica capa de chocolate oscuro. 
+            Ideal para los verdaderos aficionados al cacao.</p>
+          <div class="link">
+            <button data-id="2" data-name="Pastel de Chocolate" data-price="80" class="agregar">Agregar</button>
+            <button class="decrement" data-id="2">-</button>
+            <input class="number" type="number" id="cantidad_2" value="1" readonly>
+            <button class="increment" data-id="2">+</button>
+          </div>
+        </div>
+      </div>
+      <!-- Agregar más tarjetas de productos aquí -->
+      <div class="card" id="postres">
+        <div class="face front">
+          <img src="img/crema.jpg">
+          <h3>Crema Volteada</h3>
+        </div>
+        <div class="face back">
+          <h3>S/.8 x Porción</h3>
+          <p>Nuestra crema volteada es una experiencia única de sabor y textura. Cada porción te sumerge en un 
+            maravilloso equilibrio entre suave crema y caramelo dorado, que se derrite en tu boca con cada bocado.</p>
+          <div class="link">
+            <button data-id="3" data-name="Crema volteada" data-price="8" class="agregar">Agregar</button>
+            <button class="decrement" data-id="3">-</button>
+            <input class="number" type="number" id="cantidad_3" value="1" readonly>
+            <button class="increment" data-id="3">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="bocaditos">
+        <div class="face front">
+          <img src="img/catalogo/piti.webp">
+          <h3>Sanguches de Pollo</h3>
+        </div>
+        <div class="face back">
+          <h3>S/.160</h3>
+          <i>* x 100 unidades</i>
+          <p>Imagina un suave panecillo relleno de jugoso pollo desmenuzado, sazonado con especias selectas, 
+            perfectos para satisfacer antojos rápidos o como un aperitivo en cualquier reunión,
+          </p>
+          <div class="link">
+            <button data-id="4" data-name="Sanguches de Pollo" data-price="160" class="agregar">Agregar</button>
+            <button class="decrement" data-id="4">-</button>
+            <input class="number" type="number" id="cantidad_4" value="1" readonly>
+            <button class="increment" data-id="4">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="bocaditos">
+        <div class="face front">
+          <img src="img/catalogo/triples.jpg">
+          <h3>Mini Triples de Jamón y Queso</h3>
+        </div>
+        <div class="face back">
+          <h3>S/.150</h3>
+          <i>* x 100 unidades</i>
+          <p>Una opción ideal para cualquier ocasión: desde reuniones informales hasta eventos elegantes. 
+            Son la manera perfecta de satisfacer antojos con un toque gourmet, añadiendo un toque de 
+            elegancia a cualquier mesa</p>
+          <div class="link">
+            <button data-id="5" data-name="Mini Triples de Jamon y Queso" data-price="150" class="agregar">Agregar</button>
+            <button class="decrement" data-id="5">-</button>
+            <input class="number" type="number" id="cantidad_5" value="1" readonly>
+            <button class="increment" data-id="5">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="bocaditos">
+        <div class="face front">
+          <img src="img/catalogo/alitas.jpg">
+          <h3>Alitas Bouchet</h3>
+        </div>
+        <div class="face back">
+          <h3>S/.290</h3>
+          <i>* x 100 unidades</i>
+          <p>Preparadas con una mezcla de especias Agregar una cobertura crujiente, cada alita está impregnada de 
+            un sabor único y delicioso. Su exterior crujiente se combina perfectamente con la jugosidad y ternura 
+            de la carne en su interior</p>
+          <div class="link">
+            <button data-id="6" data-name="Alitas Bouchet" data-price="290" class="agregar">Agregar</button>
+            <button class="decrement" data-id="6">-</button>
+            <input class="number" type="number" id="cantidad_6" value="1" readonly>
+            <button class="increment" data-id="6">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="dulces">
+        <div class="face front">
+          <img src="img/catalogo/cupcakes.jpg">
+          <h3>Mini Cupcakes</h3>
+        </div>
+        <div class="face back">
+          <h3>S/.250</h3>
+          <i>* x 100 unidades</i>
+          <p>Pequeños bocados de felicidad que te conquistarán con su encanto y sabor, 
+            son la elección ideal para endulzar cualquier ocasión.
+          </p>
+          <div class="link">
+            <button data-id="7" data-name="Mini Cupcakes" data-price="250" class="agregar">Agregar</button>
+            <button class="decrement" data-id="7">-</button>
+            <input class="number" type="number" id="cantidad_7" value="1" readonly>
+            <button class="increment" data-id="7">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="dulces">
+        <div class="face front">
+          <img src="img/catalogo/pay.jpg">
+          <h3>Mini Pie de Limón</h3>
+        </div>
+        <div class="face back">
+          <h3>S/.150</h3>
+          <i>* x 100 unidades</i>
+          <p>Imagina pequeños tesoros culinarios, donde la frescura del limón se entrelaza con la dulzura 
+            de un delicado merengue y la crujiente textura de una base de galleta. Estos mini pies 
+            son como pequeñas puestas de sol en cada bocado.</p>
+          <div class="link">
+            <button data-id="8" data-name="Mini pie de Limón" data-price="150" class="agregar">Agregar</button>
+            <button class="decrement" data-id="8">-</button>
+            <input class="number" type="number" id="cantidad_8" value="1" readonly>
+            <button class="increment" data-id="8">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="empanadas">
+        <div class="face front">
+          <img src="img/catalogo/empanadas-pollo.png">
+          <h3>Empanadas de Pollo</h3>
+        </div>
+        <div class="face back">
+          <h3>S/.120</h3>
+          <i>* x 100 unidades</i>
+          <p>Nuestras empanadas de pollo son simples y deliciosas. Están rellenas con tiernos trozos de 
+            pollo sazonados y cocidos a la perfección, envueltos en una masa dorada y crujiente que resalta 
+            el sabor natural y jugoso del pollo.</p>
+          <div class="link">
+            <button data-id="9" data-name="Empanadas de Pollo" data-price="120" class="agregar">Agregar</button>
+            <button class="decrement" data-id="9">-</button>
+            <input class="number" type="number" id="cantidad_9" value="1" readonly>
+            <button class="increment" data-id="9">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="empanadas">
+        <div class="face front">
+          <img src="img/catalogo/empanadas-carne.png">
+          <h3>Empanadas de Carne</h3>
+        </div>
+        <div class="face back">
+          <h3>S/.120</h3>
+          <i>* x 100 unidades</i>
+          <p>Nuestras empanadas de carne son un clásico reconfortante. Rellenas con una mezcla sabrosa de 
+            carne de res sazonada y condimentos tradicionales, estas empanadas te brindan un sabor auténtico 
+            y satisfactorio en cada bocado.</p>
+          <div class="link">
+            <button data-id="10" data-name="Empanadas de Carne" data-price="120" class="agregar">Agregar</button>
+            <button class="decrement" data-id="10">-</button>
+            <input class="number" type="number" id="cantidad_10" value="1" readonly>
+            <button class="increment" data-id="10">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="empanadas">
+        <div class="face front">
+          <img src="img/catalogo/Empanadas-de-jamon-y-queso.jpg">
+          <h3>Empanadas de Jamón y Queso</h3>
+        </div>
+        <div class="face back">
+          <h3>S/.120</h3>
+          <i>* x 100 unidades</i>
+          <p>Saborea nuestras empanadas de jamón, rellenas con una generosa porción de jamón cocido y queso 
+            derretido. Cada bocado ofrece una combinación perfecta de sabores salados y cremosos, envueltos en 
+            una masa dorada y crujiente que te dejará con ganas de más.</p>
+          <div class="link">
+            <button data-id="11" data-name="Empanadas de Jamón y Queso" data-price="120" class="agregar">Agregar</button>
+            <button class="decrement" data-id="11">-</button>
+            <input class="number" type="number" id="cantidad_11" value="1" readonly>
+            <button class="increment" data-id="11">+</button>
+
+          </div>
+        </div>
+      </div>
+      <div class="card" id="bocaditos">
+        <div class="face front">
+          <img src="img/catalogo/tartalejas-aji-gallina.webp">
+          <h3>Tartalejas de Ají de Gallina</h3>
+        </div>
+        <div class="face back">
+          <h3>S/.120</h3>
+          <i>* x 100 unidades</i>
+          <p>Prueba nuestras Tartalejas de Ají de Gallina: una combinación sublime de sabores peruanos, donde 
+            la cremosidad del ají de gallina se encuentra con la crujiente tartaleta, creando una experiencia 
+            gastronómica inolvidable.</p>
+          <div class="link">
+            <button data-id="12" data-name="Tartalejas de Ají de Gallina" data-price="120" class="agregar">Agregar</button>
+            <button class="decrement" data-id="12">-</button>
+            <input class="number" type="number" id="cantidad_12" value="1" readonly>
+            <button class="increment" data-id="12">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="dulces">
+        <div class="face front">
+          <img src="img/catalogo/trufas-chocolate.webp">
+          <h3>Trufas de Chocolate</h3>
+        </div>
+        <div class="face back">
+          <h3>S/.120</h3>
+          <i>* x 100 unidades</i>
+          <p>Deléitate con nuestras trufas de chocolate, una tentación exquisita donde la suavidad del chocolate 
+            se fusiona con intensos matices de cacao. Un bocado indulgente para satisfacer tus antojos más dulces.</p>
+          <div class="link">
+            <button data-id="13" data-name="Trufas de Chocolate" data-price="120" class="agregar">Agregar</button>
+            <button class="decrement" data-id="13">-</button>
+            <input class="number" type="number" id="cantidad_13" value="1" readonly>
+            <button class="increment" data-id="13">+</butto>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="dulces">
+        <div class="face front">
+          <img src="img/catalogo/brownies.jpg">
+          <h3>Brownies</h3>
+        </div>
+        <div class="face back">
+          <h3>S/.120</h3>
+          <i>* x 100 unidades</i>
+          <p>
+            Déjate tentar por una delicia densa y jugosa que te cautivará 
+            desde el primer bocado. Con una textura indulgente y un sabor que te transportará al paraíso del cacao, 
+            cada porción es un momento de placer incomparable.</p>
+          <div class="link">
+            <button data-id="14" data-name="Brownies" data-price="120" class="agregar">Agregar</button>
+            <button class="decrement" data-id="14">-</button>
+            <input class="number" type="number" id="cantidad_14" value="1" readonly>
+            <button class="increment" data-id="14">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="dulces">
+        <div class="face front">
+          <img src="img/catalogo/postres-vasitos.jpg">
+          <h3>Postres en Vasitos</h3>
+        </div>
+        <div class="face back">
+          <h3>S/.120</h3>
+          <i>* x 100 unidades</i>
+          <p>Cada pequeño recipiente es una obra maestra de sabores cuidadosamente combinados y presentados con 
+            elegancia, nuestros postres en vasitos ofrecen una explosión de sabor en cada cucharada, perfectos 
+            para satisfacer tu antojo de dulce en cualquier ocasión.</p>
+          <div class="link">
+            <button data-id="15" data-name="Postres en Vasitos" data-price="120" class="agregar">Agregar</button>
+            <button class="decrement" data-id="15">-</button>
+            <input class="number" type="number" id="cantidad_15" value="1" readonly>
+            <button class="increment" data-id="15">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="dulces">
+        <div class="face front">
+          <img src="img/catalogo/alfajores.jpg">
+          <h3>Alfajores</h3>
+        </div>
+        <div class="face back">
+          <h3>S/.120</h3>
+          <i>* x 100 unidades</i>
+          <p>Prueba estos alfajores, con una receta auténtica que fusiona la 
+            suavidad de las galletas con el irresistible manjar, cada bocado es un viaje de placer 
+            y tradición.</p>
+          <div class="link">
+            <button data-id="16" data-name="Alfajores" data-price="120" class="agregar">Agregar</button>
+            <button class="decrement" data-id="16">-</button>
+            <input class="number" type="number" id="cantidad_16" value="1" readonly>
+            <button class="increment" data-id="16">+</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="mensaje_agregado" style="z-index: 9999;position: fixed; top: 50%;left: 50%;transform: translate(-50%, -50%);display: flex;justify-content: center;align-items: center;background-color: #4CAF50;color: white;text-align: center;padding: 10px 60px;"> Producto añadido al carrito
+    </div>
+  </div>
+
+  <footer class="footer">
+    <ul class="social-icon">
+        <li class="icon-elem">
+            <a href="https://api.whatsapp.com/send?phone=51954419997" target="_blank" class="icono">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+        </li>
+        <li class="icon-elem">
+            <a href="https://www.instagram.com/deliciasde_amor__/" target="_blank" class="icono">
+                <i class="bi bi-instagram"></i>
+            </a>
+        </li>
+        <li class="icon-elem">
+            <a href="https://www.facebook.com/silvia.castillootiniano" target="_blank" class="icono">
+                <i class="bi bi-facebook"></i>
+            </a>
+        </li>
+        <li class="icon-elem">
+            <a href="https://www.tiktok.com/@deliciasde_amor" target="_blank" class="icono">
+                <i class="bi bi-tiktok"></i>
+            </a>
+        </li>
+    </ul>
+    <ul class="list">
+        <li class="list-elem">
+            <a href="" class="list-icon">Equipo</a>
+        </li>
+        <li class="list-elem">
+            <a href="https://maps.app.goo.gl/V3ZMd6H3b4npiB3P7" target="_blank" class="list-icon">Ubicación</a>
+        </li>
+        <li class="list-elem">
+            <a href="2-nosotros.html" class="list-icon">Conócenos</a>
+        </li>
+        <li class="list-elem">
+            <a href="" class="list-icon">Video</a>
+        </li>
+        <li class="list-elem">
+            
+        </li>
+    </ul><br>
+    <i><h3>Horarios de Atención</h3></i>
+    <i>De Lunes a Sabado de 8 am a 6 pm</i><br>
+    <p class="text">© 2024 Delicias de Amor. Todos los Derechos Reservados.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="JS/3.2-catalogo.js"></script>
+
+<script>
+  $(document).ready(function() {
+    // Inicialmente ocultar el mensaje
+    $('#mensaje_agregado').hide();
+  
+    $('.increment').click(function() {
+      const id = $(this).data('id');
+      let cantidad = parseInt($('#cantidad_' + id).val(), 10);
+      $('#cantidad_' + id).val(cantidad + 1);
+    });
+  
+    $('.decrement').click(function() {
+      const id = $(this).data('id');
+      let cantidad = parseInt($('#cantidad_' + id).val(), 10);
+      if (cantidad > 1) {
+        $('#cantidad_' + id).val(cantidad - 1);
+      }
+    });
+  
+    // ESTA PARTE ES LA QUE ENVIARA LOS DATOS
+    $('.agregar').click(function(e) {
+      e.preventDefault();
+      const id = $(this).data('id');
+      const name = $(this).data('name');
+      const price = $(this).data('price');
+      const cantidad = $('#cantidad_' + id).val();
+  
+      // Imprimir los datos del producto en la consola
+      console.log('Datos del producto:');
+      console.log('ID:', id);
+      console.log('Nombre:', name);
+      console.log('Precio:', price);
+  
+      // Mostrar el mensaje
+      $('#mensaje_agregado').fadeIn(300).delay(1000).fadeOut(300);
+  
+      // Enviar los datos a la página 4-mostrarCarrito.php
+      $.ajax({
+        url: '4-mostrarCarrito.php',
+        type: 'POST',
+        data: {
+          id: id,
+          nombre: name,
+          precio: price,
+          cantidad: cantidad
+        },
+        success: function(response) {
+          console.log('Producto agregado al carrito');
+        },
+      });
+    });
+  });
+  
+</script>
+
+</body>
+</html>
